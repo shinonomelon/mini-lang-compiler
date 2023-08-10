@@ -1,6 +1,6 @@
-# mini-lang Compiler
+# mini-lang Transpiler
 
-このプロジェクトは、`mini-lang`という独自のシンプルな言語を JavaScript にコンパイルするコンパイラです。
+このプロジェクトは、`mini-lang`という独自のシンプルな言語を JavaScript に変換する**トランスパイラ**です。
 
 ## 特徴
 
@@ -11,8 +11,8 @@
 プロジェクトをクローンします：
 
 ```bash
-git clone https://github.com/shinonomelon/mini-lang-compiler
-cd mini-lang-compiler
+git clone https://github.com/shinonomelon/mini-lang-transpiler
+cd mini-lang-transpiler
 ```
 
 ## 使い方
