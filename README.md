@@ -10,7 +10,7 @@
 
 プロジェクトをクローンします：
 
-```bash
+```zsh
 git clone https://github.com/shinonomelon/mini-lang-transpiler
 cd mini-lang-transpiler
 ```
@@ -19,11 +19,11 @@ cd mini-lang-transpiler
 
 `mini-lang.txt` ファイルにコードを記述します。その後、以下のコマンドを実行してトランスパイルします：
 
-```bash
-node compiler.js
+```zsh
+node transpiler.js
 ```
 
-出力された JavaScript は `compiled.js` ファイルに保存されます。
+出力された JavaScript は `transpiled.js` ファイルに保存されます。
 
 ## サンプル
 
@@ -33,7 +33,7 @@ node compiler.js
 add 3 to 5
 ```
 
-出力 (`compiled.js`):
+出力 (`transpiled.js`):
 
 ```javascript
 3 + 5;

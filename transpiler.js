@@ -93,7 +93,7 @@ function codeGenerator(node) {
   }
 }
 
-function compiler(input) {
+function transpiler(input) {
   let tokens = tokenizer(input);
   let ast = parser(tokens);
   return codeGenerator(ast) + ";";
@@ -103,10 +103,10 @@ function compiler(input) {
 fs.readFile("mini-lang.txt", "utf8", (err, data) => {
   if (err) throw err;
 
-  const compiledCode = compiler(data);
+  const transpiledCode = transpiler(data);
 
-  fs.writeFile("compiled.js", compiledCode, (err) => {
+  fs.writeFile("transpiled.js", transpiledCode, (err) => {
     if (err) throw err;
-    console.log("The file has been compiled and saved!");
+    console.log("The file has been transpiled and saved!");
   });
 });
