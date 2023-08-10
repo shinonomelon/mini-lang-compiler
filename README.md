@@ -17,7 +17,7 @@ cd mini-lang-transpiler
 
 ## 使い方
 
-`mini-lang.txt` ファイルにコードを記述します。その後、以下のコマンドを実行してコンパイルします：
+`mini-lang.txt` ファイルにコードを記述します。その後、以下のコマンドを実行してトランスパイルします：
 
 ```bash
 node compiler.js
