@@ -1,0 +1,11 @@
+{
+  "name": "mini-lang-transpiler",
+  "version": "1.0.0",
+  "description": "このプロジェクトは、`mini-lang`という独自のシンプルな言語を JavaScript に変換するトランスパイラです。",
+  "main": "transpiler.js",
+  "author": "shinonomelon",
+  "license": "MIT",
+  "bin": {
+    "mini-lang-transpiler": "./transpiler.js"
+  }
+}
