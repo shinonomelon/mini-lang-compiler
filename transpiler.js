@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fs = require("fs");
 
 function tokenizer(input) {
@@ -99,14 +101,17 @@ function transpiler(input) {
   return codeGenerator(ast) + ";";
 }
 
+const inputFileName = process.argv[2] || "mini-lang.txt"; // デフォルトのファイル名を指定
+const outputFileName = process.argv[3] || "transpiled.js"; // デフォルトの出力ファイル名を指定
+
 // ファイルの読み書き処理
-fs.readFile("mini-lang.txt", "utf8", (err, data) => {
+fs.readFile(inputFileName, "utf8", (err, data) => {
   if (err) throw err;
 
   const transpiledCode = transpiler(data);
 
-  fs.writeFile("transpiled.js", transpiledCode, (err) => {
+  fs.writeFile(outputFileName, transpiledCode, (err) => {
     if (err) throw err;
-    console.log("The file has been transpiled and saved!");
+    console.log(`The file has been transpiled and saved as ${outputFileName}!`);
   });
 });
